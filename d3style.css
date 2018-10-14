@@ -28,7 +28,7 @@
   
   .axis-text {
     font-family: sans-serif;
-    font-weight: bold;
+    font-weight: italics;
     fill: black;
     text-anchor: middle;     
   }

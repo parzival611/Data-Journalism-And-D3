@@ -2,7 +2,7 @@
 var svgWidth = 900  ;
 var svgHeight = 500;
 
-var margin = {top: 20, right: 40, bottom: 80, left:10};
+var margin = {top: 20, right: 40, bottom: 80, left: 45};
 
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
@@ -122,6 +122,7 @@ d3.csv("data.csv", function(error, csvdata) {
         "transform",
         "translate(" + width / 2 + " ," + (height + margin.top + 20) + ")")
     .attr("data-axis-name", "poverty")
+    .attr("class", "axis-text")
     .text("In Poverty (%)");
 
     var circles = chart.selectAll(".state")
